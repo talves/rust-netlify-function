@@ -1,0 +1,18 @@
+[package]
+name = "hello"
+version = "0.1.0"
+authors = ["talves <tony@3alves.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[package.metadata.wasm-pack.profile.release]
+# If using version wasm-bindgen>0.2.66 see https://github.com/rustwasm/wasm-pack/issues/886#issuecomment-693528200
+# you must uncomment next line or lock to =0.2.65
+# wasm-opt = ["-Oz", "--enable-mutable-globals"]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = "=0.2.65"

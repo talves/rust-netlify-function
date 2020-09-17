@@ -1,0 +1,12 @@
+{
+  "name": "rust-netlify-function",
+  "version": "0.1.0",
+  "description": "Netlify function calling wasm built with Rust",
+  "repository": "https://github.com/talves/rust-netlify-function",
+  "author": "talves <tony@3alves.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build:wasm": "wasm-pack build --out-dir functions/hello/pkg --target nodejs"
+  }
+}

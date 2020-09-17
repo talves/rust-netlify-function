@@ -1,0 +1,15 @@
+{
+  "name": "hello",
+  "collaborators": [
+    "talves <tony@3alves.com>"
+  ],
+  "version": "0.1.0",
+  "files": [
+    "hello_bg.wasm",
+    "hello.js",
+    "hello_bg.js",
+    "hello.d.ts"
+  ],
+  "main": "hello.js",
+  "types": "hello.d.ts"
+}
