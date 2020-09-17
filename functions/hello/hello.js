@@ -2,7 +2,7 @@ const { hello_world } = require("./pkg/hello");
 
 exports.handler = async function (event) {
   try {
-    const { name } = event.queryStringParameters || { name: "World" };
+    const { name = "World" } = event.queryStringParameters;
     const message = hello_world(name);
 
     return {
